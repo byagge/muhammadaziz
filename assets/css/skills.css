@@ -1,0 +1,326 @@
+:root {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --accent: #10B981;
+    --accent-light: rgba(99, 102, 241, 0.1);
+    --border: rgba(255, 255, 255, 0.1);
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    
+    --python-color: #3776ab;
+    --django-color: #092e20;
+    --html-color: #e34c26;
+    --css-color: #264de4;
+    --js-color: #f7df1e;
+    --react-color: #61dafb;
+    --node-color: #339933;
+    --sql-color: #f29111;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 20px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+
+.section {
+    background-color: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(42, 42, 42, 0.6);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    padding-left: 18px;
+}
+
+.section-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.section-title:hover:before {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.2);
+}
+
+.view-all {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.view-all:hover {
+    color: var(--text-primary);
+    transform: translateX(4px);
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: var(--transition);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    transform: translateY(-2px);
+}
+
+.skill-card:last-child {
+    margin-bottom: 0;
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+    z-index: 1;
+}
+
+.python {
+    background-color: var(--python-color);
+}
+
+.django {
+    background-color: var(--django-color);
+}
+
+.html {
+    background-color: var(--html-color);
+}
+
+.css {
+    background-color: var(--css-color);
+}
+
+.js {
+    background-color: var(--js-color);
+    color: #000;
+}
+
+.react {
+    background-color: var(--react-color);
+    color: #000;
+}
+
+.node {
+    background-color: var(--node-color);
+}
+
+.sql {
+    background-color: var(--sql-color);
+}
+
+.skill-info {
+    flex: 1;
+}
+
+.skill-title {
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    font-size: 15px;
+}
+
+.skill-subtitle {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin: 0;
+}
+
+.skill-progress-container {
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.skill-progress-bar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease-out;
+}
+
+.skill-category {
+    margin-bottom: 24px;
+}
+
+.category-title {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    padding-left: 12px;
+    border-left: 2px solid var(--accent);
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.favorite-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--accent-light);
+    color: var(--accent);
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    animation: pulse 2s infinite;
+}
+
+/* Project Details Styles */
+.project-details {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+}
+
+.project-content {
+    padding: 0 12px;
+}
+
+.project-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    background: linear-gradient(90deg, var(--accent), #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.meta-item {
+    font-size: 14px;
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-left: 2px solid var(--accent);
+}
+
+.meta-item span {
+    color: var(--text-secondary);
+    margin-right: 6px;
+    font-weight: 500;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.project-description h3 {
+    font-size: 18px;
+    color: var(--text-primary);
+    margin: 24px 0 16px 0;
+    position: relative;
+    padding-left: 14px;
+}
+
+.project-description h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 16px;
+    background-color: var(--accent);
+    border-radius: 3px;
+}
+
+.project-description p {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+}

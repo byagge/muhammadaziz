@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Aziz — Full Stack Devolper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="loading-bar"></div>
+
+    <div class="loading-animation"></div>
+    <div class="container">
+        <header>
+            <div class="header-icons">
+              <!-- Home -->
+              <a href="/" title="Home">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+          
+              <!-- About me -->
+              <a href="/about/" title="About me">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.41 6.51L8.59 10.49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10
+                           10-4.477 10-10S17.523 2 12 2z"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+          
+              <!-- Portfolio -->
+              <a href="/portfolio/" title="Portfolio">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 7H20V17H4V7Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 7V5H15V7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4 17L2 22H22L20 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+          
+              <!-- Services -->
+              <a href="/services/" title="Services">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1L3 5V11C3 16.5228 7.4772 21 13 21C18.5228 21 23 16.5228 23 11V5L12 1Z"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 8V13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 11H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          
+            <!-- Separate Hire Me button -->
+            <a href="/hire/">
+            <div class="add-button">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 12H19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div></a>
+        </header>
+        
+        <h1>Web Development Inquiry</h1>
+        <p>Got an idea and need development help? Reach out now</p>
+        
+        <form id="designForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control" placeholder="Name">
+                    <div class="error-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8V12" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16H12.01" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" class="form-control" placeholder="Email Address">
+                    <div class="error-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8V12" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16H12.01" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                <div class="error-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16H12.01" stroke="#ff4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+            
+            <div id="successMessage" class="message success">
+                Your inquiry has been submitted successfully. We'll get back to you soon!
+            </div>
+            
+            <div id="errorMessage" class="message error-message">
+                Please fill out all fields correctly.
+            </div>
+        </form>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.getElementById('designForm');
+                const nameInput = document.getElementById('name');
+                const emailInput = document.getElementById('email');
+                const messageInput = document.getElementById('message');
+                const successMessage = document.getElementById('successMessage');
+                const errorMessage = document.getElementById('errorMessage');
+                
+                // Validate email format
+                function isValidEmail(email) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return emailRegex.test(email);
+                }
+                
+                // Validate form fields
+                function validateField(field) {
+                    if (field.value.trim() === '') {
+                        field.parentElement.classList.add('error');
+                        return false;
+                    } else if (field.id === 'email' && !isValidEmail(field.value)) {
+                        field.parentElement.classList.add('error');
+                        return false;
+                    } else {
+                        field.parentElement.classList.remove('error');
+                        return true;
+                    }
+                }
+                
+                // Add input event listeners to remove error class on typing
+                [nameInput, emailInput, messageInput].forEach(input => {
+                    input.addEventListener('input', function() {
+                        this.parentElement.classList.remove('error');
+                        errorMessage.style.display = 'none';
+                    });
+                });
+                
+                // Form submission handler
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validate all fields
+                    const nameValid = validateField(nameInput);
+                    const emailValid = validateField(emailInput);
+                    const messageValid = validateField(messageInput);
+                    
+                    if (nameValid && emailValid && messageValid) {
+                        // Form is valid, simulate form submission
+                        successMessage.style.display = 'block';
+                        errorMessage.style.display = 'none';
+                        
+                        // Reset form after successful submission
+                        form.reset();
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.style.display = 'none';
+                        }, 5000);
+                    } else {
+                        // Form is invalid, show error message
+                        errorMessage.style.display = 'block';
+                        successMessage.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+        
+        <div class="cta-section">
+            <h2 class="cta-title">Let's work together.</h2>
+            <p class="cta-text">Creating user experiences and visual appealing design</p>
+            <div class="cta-buttons">
+                <button class="profile-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.5 10C9.32843 10 10 9.32843 10 8.5C10 7.67157 9.32843 7 8.5 7C7.67157 7 7 7.67157 7 8.5C7 9.32843 7.67157 10 8.5 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 15L16 10L5 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Hire Me
+                </button>
+                <button class="profile-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 6L12 13L21 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Open Email
+                </button>
+            </div>
+        </div>
+        
+        <div id="social-sidebar">
+            <button class="toggle-btn" id="sidebar-toggle" aria-label="Toggle social">
+              <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/ style="color: #fff;"></svg>
+            </button>
+            <div class="links-panel" id="links-panel">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+              </a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+                YouTube
+              </a>
+              <a href="#" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(90deg); width: 15px; height: auto">
+                Twitter
+              </a>
+            </div>
+          </div>
+        
+        <div class="footer" id="site-footer">
+            <p>© 2025 Designer Personal Page • Built by Brian Do</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="theme-switch">
+        <i class="fas fa-moon"></i>
+    </div> -->
+    <div class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Email copied to clipboard!</span>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        :root {
+          --bg-blur: rgba(26, 26, 26, 0.7);
+          --accent: #10B981;
+          --accent-light: rgba(16, 185, 129, 0.1);
+          --text-primary: #fff;
+          --text-secondary: #cccccc;
+          --transition: all .4s cubic-bezier(.25,.8,.25,1);
+          --panel-width: 260px;
+          --btn-size: 56px;
+          --radius: 12px;
+          --link-height: 48px;
+        }
+        * { box-sizing: border-box; margin:0; padding:0 }
+        body {
+          font-family:'Inter',sans-serif;
+          background:#111;
+          color:var(--text-primary);
+        }
+        main {
+          min-height:200vh;
+          padding:40px;
+        }
+        /* Сайдбар */
+        #social-sidebar {
+          position:fixed;
+          left:0; top:50%;
+          transform:translate(-100%, -50%);
+          display:flex; align-items:center;
+          z-index:999;
+          transition:var(--transition);
+        }
+        #social-sidebar.visible {
+          transform:translate(0, -50%);
+        }
+        #social-sidebar.expanded {
+          width:var(--panel-width);
+          background:var(--bg-blur);
+          backdrop-filter:blur(12px);
+          border-top-right-radius:var(--radius);
+          border-bottom-right-radius:var(--radius);
+          padding:12px;
+          box-shadow:0 8px 32px rgba(0,0,0,0.5);
+        }
+        /* Кнопка-тоггл */
+        .toggle-btn {
+          width:var(--btn-size); height:var(--btn-size);
+          background:var(--accent);
+          border:none; outline:none;
+          border-top-right-radius:var(--radius);
+          border-bottom-right-radius:var(--radius);
+          display:flex; align-items:center; justify-content:center;
+          cursor:pointer;
+          box-shadow:0 4px 16px rgba(0,0,0,0.4);
+          transition:var(--transition);
+        }
+        .toggle-btn:hover {
+          transform:scale(1.05);
+        }
+        .toggle-btn svg {
+          width:24px; height:24px;
+          fill:var(--text-primary);
+          transition:transform .4s;
+        }
+        /* Поворот при раскрытии */
+        #social-sidebar.expanded .toggle-btn svg {
+          transform:rotate(45deg);
+        }
+        /* Панель ссылок */
+        .links-panel {
+          flex:1;
+          overflow:hidden;
+          height:0;
+          transition:height .4s cubic-bezier(.25,.8,.25,1);
+          display:flex; flex-direction:column;
+          gap:8px;
+          margin-left:8px;
+        }
+        #social-sidebar.expanded .links-panel {
+          height: calc((var(--link-height) + 8px) * 4 + 8px);
+        }
+        .links-panel a {
+          display:flex;
+          align-items:center;
+          gap:12px;
+          height:var(--link-height);
+          padding:0 12px;
+          background:var(--accent-light);
+          border-radius:var(--radius);
+          text-decoration:none;
+          color:var(--text-secondary);
+          font-size:15px;
+          font-weight:500;
+          opacity:0;
+          transform:translateX(-20px);
+          transition:var(--transition);
+        }
+        /* Анимация появления ссылок */
+        #social-sidebar.expanded .links-panel a {
+          opacity:1;
+          transform:translateX(0);
+        }
+        .links-panel a:hover {
+          background:var(--accent);
+          color:var(--text-primary);
+        }
+        .links-panel a svg {
+          width:24px; height:24px;
+          fill:var(--text-secondary);
+          transition:fill var(--transition);
+        }
+        .links-panel a:hover svg {
+          fill:var(--text-primary);
+        }
+      </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to project cards
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.4)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.3)';
+                });
+                
+                // Add click animation
+                card.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(-5px)';
+                    }, 150);
+                });
+            });
+            
+            // Add hover effect to product cards
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.4)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.3)';
+                });
+                
+                // Add click animation
+                card.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(-5px)';
+                    }, 150);
+                });
+            });
+            
+            // Add typing effect to CTA title
+            const ctaTitle = document.querySelector('.cta-title');
+            const originalText = ctaTitle.textContent;
+            ctaTitle.textContent = '';
+            
+            let i = 0;
+            const typeWriter = () => {
+                if (i < originalText.length) {
+                    ctaTitle.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            };
+            
+            // Start typing effect when scrolled into view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(typeWriter, 500);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            observer.observe(ctaTitle);
+            
+            // Add hover effect to buttons
+            const buttons = document.querySelectorAll('.profile-button');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = '#2a2a2a';
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = '#1E1E1E';
+                    this.style.transform = 'translateY(0)';
+                });
+                
+                // Add click animation
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(0)';
+                    }, 150);
+                });
+            });
+            
+            // Toggle sections
+            const sectionTitles = document.querySelectorAll('.section-title');
+            sectionTitles.forEach(title => {
+                title.addEventListener('click', function() {
+                    const section = this.closest('.section');
+                    const content = section.querySelectorAll(':scope > *:not(.section-header)');
+                    const arrow = this.querySelector('svg');
+                    
+                    content.forEach(el => {
+                        if (el.style.display === 'none') {
+                            el.style.display = 'block';
+                            arrow.style.transform = 'rotate(0deg)';
+                        } else {
+                            el.style.display = 'none';
+                            arrow.style.transform = 'rotate(-90deg)';
+                        }
+                    });
+                });
+            });
+            
+            // Add pulse animation to profile image
+            const profileImage = document.querySelector('.profile-image');
+            setInterval(() => {
+                profileImage.style.borderColor = '#10B981';
+                setTimeout(() => {
+                    profileImage.style.borderColor = '#2a2a2a';
+                }, 1000);
+            }, 2000);
+            
+            // Add click functionality for copy email button
+            const copyEmailBtn = document.querySelectorAll('.profile-button')[1];
+            copyEmailBtn.addEventListener('click', function() {
+                navigator.clipboard.writeText('brian.do@example.com');
+                
+                // Show copied notification
+                const notification = document.createElement('div');
+                notification.style.position = 'fixed';
+                notification.style.bottom = '20px';
+                notification.style.left = '50%';
+                notification.style.transform = 'translateX(-50%)';
+                notification.style.backgroundColor = '#10B981';
+                notification.style.color = 'white';
+                notification.style.padding = '8px 16px';
+                notification.style.borderRadius = '4px';
+                notification.style.fontWeight = '500';
+                notification.style.zIndex = '1000';
+                notification.textContent = 'Email copied to clipboard!';
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.opacity = '0';
+                    notification.style.transition = 'opacity 0.5s ease';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 500);
+                }, 2000);
+            });
+            
+            // Hide loading animation after 1.5 seconds
+            setTimeout(() => {
+                const loadingBar = document.querySelector('.loading-animation');
+                loadingBar.style.opacity = '0';
+                loadingBar.style.transition = 'opacity 0.5s ease';
+            }, 1500);
+        });
+    </script>
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 50
+            });
+            
+            // Apply fade-up animations
+            const fadeElements = document.querySelectorAll('.fade-up');
+            setTimeout(() => {
+                fadeElements.forEach(el => {
+                    el.classList.add('active');
+                });
+            }, 300);
+            
+            // Custom cursor effect
+            const cursor = document.querySelector('.cursor');
+            const cursorDot = document.querySelector('.cursor-dot');
+            
+            document.addEventListener('mousemove', function(e) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                
+                cursorDot.style.left = e.clientX + 'px';
+                cursorDot.style.top = e.clientY + 'px';
+            });
+            
+            document.addEventListener('mousedown', function() {
+                cursor.style.width = '15px';
+                cursor.style.height = '15px';
+            });
+            
+            document.addEventListener('mouseup', function() {
+                cursor.style.width = '20px';
+                cursor.style.height = '20px';
+            });
+            
+            // Hover effects for clickable elements
+            const clickables = document.querySelectorAll('a, button, .project-card, .product-card, .social-icon, .header-icon, .theme-switch');
+            
+            clickables.forEach(el => {
+                el.addEventListener('mouseenter', function() {
+                    cursor.style.width = '40px';
+                    cursor.style.height = '40px';
+                    cursor.style.backgroundColor = 'rgba(16, 185, 129, 0.2)';
+                });
+                
+                el.addEventListener('mouseleave', function() {
+                    cursor.style.width = '20px';
+                    cursor.style.height = '20px';
+                    cursor.style.backgroundColor = 'rgba(16, 185, 129, 0.5)';
+                });
+            });
+            
+            // Copy email functionality
+            const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
+            const toast = document.querySelector('.toast');
+            
+            copyEmailBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    navigator.clipboard.writeText('brian.do@example.com')
+                        .then(() => {
+                            toast.classList.add('active');
+                            setTimeout(() => {
+                                toast.classList.remove('active');
+                            }, 3000);
+                        });
+                });
+            });
+            
+            // Theme switcher
+            const themeSwitch = document.querySelector('.theme-switch');
+            const body = document.body;
+            
+            themeSwitch.addEventListener('click', function() {
+                body.classList.toggle('light-theme');
+                
+                const icon = themeSwitch.querySelector('i');
+                if (body.classList.contains('light-theme')) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                } else {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
+                
+                // Add animation to theme switch
+                themeSwitch.classList.add('animate__animated', 'animate__flipInY');
+                setTimeout(() => {
+                    themeSwitch.classList.remove('animate__animated', 'animate__flipInY');
+                }, 1000);
+            });
+            
+            // Project card interactions
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            projectCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Create a ripple effect
+                    const ripple = document.createElement('div');
+                    ripple.classList.add('ripple');
+                    card.appendChild(ripple);
+                    
+                    // Position the ripple
+                    const rect = card.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    
+                    ripple.style.width = size + 'px';
+                    ripple.style.height = size + 'px';
+                    ripple.style.left = (event.clientX - rect.left - size / 2) + 'px';
+                    ripple.style.top = (event.clientY - rect.top - size / 2) + 'px';
+                    
+                    // Remove ripple after animation completes
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                    
+                    // Simulate navigation effect
+                    document.body.style.opacity = '0.8';
+                    setTimeout(() => {
+                        document.body.style.opacity = '1';
+                    }, 300);
+                });
+            });
+            
+            // Parallax effect on scroll
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                document.querySelectorAll('.section').forEach((section, index) => {
+                    section.style.transform = `translateY(${scrollTop * -0.03 * (index * 0.3 + 0.1)}px)`;
+                });
+            });
+            
+            // Interactive profile image
+            const profileImage = document.querySelector('.profile-image');
+            
+            profileImage.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                
+                this.style.transform = `perspective(500px) rotateY(${x * 20}deg) rotateX(${-y * 20}deg) scale(1.05)`;
+            });
+            
+            profileImage.addEventListener('mouseleave', function() {
+                this.style.transform = 'perspective(500px) rotateY(0) rotateX(0) scale(1)';
+            });
+            
+            // Loading simulation
+            setTimeout(() => {
+                document.querySelector('.loading-bar').style.display = 'none';
+            }, 1500);
+            
+            // Mobile menu toggle
+            const mobileMenuToggle = document.querySelector('.header-icon:last-child');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                const mobileMenu = document.createElement('div');
+                mobileMenu.classList.add('mobile-menu');
+                
+                mobileMenu.innerHTML = `
+                    <div class="mobile-menu-header">
+                        <div class="profile-image">
+                            <img src="/api/placeholder/50/50" alt="Brian Do" />
+                        </div>
+                        <div class="close-menu">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <nav class="mobile-nav">
+                        <a href="#" class="mobile-nav-item">Home</a>
+                        <a href="#" class="mobile-nav-item">Projects</a>
+                        <a href="#" class="mobile-nav-item">Products</a>
+                        <a href="#" class="mobile-nav-item">About Me</a>
+                        <a href="#" class="mobile-nav-item">Contact</a>
+                    </nav>
+                `;
+                
+                document.body.appendChild(mobileMenu);
+                
+                setTimeout(() => {
+                    mobileMenu.classList.add('active');
+                }, 10);
+                
+                const closeMenu = mobileMenu.querySelector('.close-menu');
+                closeMenu.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    
+                    setTimeout(() => {
+                        mobileMenu.remove();
+                    }, 300);
+                });
+            });
+            
+            // 3D hover effect for cards
+            const cards = document.querySelectorAll('.project-card, .product-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mousemove', function(e) {
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const angleX = (y - centerY) / 15;
+                    const angleY = (centerX - x) / 15;
+                    
+                    this.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.02)`;
+                    this.style.boxShadow = `${angleY * -0.5}px ${angleX * 0.5}px 20px rgba(0, 0, 0, 0.4)`;
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+                    this.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.3)';
+                });
+            });
+            
+            // Dynamic gradient animation
+            const sections = document.querySelectorAll('.section');
+            
+            sections.forEach(section => {
+                section.addEventListener('mouseenter', function() {
+                    this.style.background = 'linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary))';
+                    this.style.backgroundSize = '200% 200%';
+                    this.style.backgroundPosition = '0% 0%';
+                    this.style.animation = 'gradientAnimation 10s ease infinite';
+                });
+                
+                section.addEventListener('mouseleave', function() {
+                    this.style.background = 'var(--bg-secondary)';
+                    this.style.animation = 'none';
+                });
+            });
+            
+            // Keyboard navigation enhancement
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Tab') {
+                    document.body.classList.add('keyboard-navigation');
+                }
+            });
+            
+            document.addEventListener('mousedown', function() {
+                document.body.classList.remove('keyboard-navigation');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const sidebar = document.getElementById('social-sidebar');
+          const toggle = document.getElementById('sidebar-toggle');
+    
+          // Появление через 5.5 секунд
+          setTimeout(() => sidebar.classList.add('visible'), 5500);
+    
+          // Раскрытие / сворачивание
+          toggle.addEventListener('click', () => {
+            sidebar.classList.toggle('expanded');
+          });
+        });
+      </script>
+</body>
+</html>
